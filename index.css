@@ -1,0 +1,7 @@
+html {
+  background-color: black
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}

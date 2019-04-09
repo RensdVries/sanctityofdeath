@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <link rel="SHORTCUT ICON" href="Naamloos-1.ico" type="image/x-icon" />
+<title> Sanctity of Life </title>
+<link rel="stylesheet" href="index.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 350px;
+  bottom: 0;
+  left: 80px;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+
+<script>
+function OpenLife(){
+  window.open('life.html','newwindow', 'width=300,height=400,left=100,top=300 scrollbars=1')
+}
+
+function OpenChoice(){
+  window.open('midden.html','newwindow', 'width=300,height=400,left=300,top=300 scrollbars=1')
+}
+
+function OpenDeath(){
+  window.open('death.html','newwindow', 'width=300,height=400,left=500,top=300 scrollbars=1')
+}
+  </script>
+
+
+<body>
+
+
+
+
+  <embed src="SS.mp3" width="180" height="90" loop="false" autostart="false" hidden="true" />
+
+<div class ="life" onclick="OpenLife()" style="cursor: help;">
+  <img src="LL.png" IMG STYLE="position:absolute; TOP:35px; LEFT:310px; WIDTH:210px;" class="image">
+  </div>
+
+
+
+<div class="Choice" onclick="OpenChoice()" style="cursor: help;">
+<img  src="ML.png" IMG STYLE="position:absolute; TOP:25px; LEFT:570px; WIDTH:221px;">
+</div>
+
+
+
+<div class="death"  onclick="OpenDeath()" style="cursor: help;">
+  <img src="DL.png" IMG STYLE="position:absolute; TOP:35px; LEFT:840px; WIDTH:210px;">
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
